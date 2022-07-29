@@ -1,0 +1,301 @@
+ body{
+   background-color: #f1f0ee;
+ }
+ .cv{
+    position: absolute;
+    font-size:2em;
+    top: 20%; 
+    left: 33%;
+    color: #2b2b28;
+ }
+
+ .me{
+    border-radius:50%; 
+    height:300px;
+     margin-left: 1em;
+     margin-bottom: 1em;
+
+ }
+
+ .icon{
+     font-size: 30px;
+     padding: 7px;
+     color: #2b2b28;
+     position: relative;
+ }
+ 
+ .icon:hover{
+     background-color: #2b2b28;
+     color: #4e8d7c;
+     border-radius: 50%;
+
+ }
+.cv a {
+    color: #5a887c;
+}
+
+.about{
+    margin-top: 3em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.cv-buton{
+    background-color: #fff;
+    border: 1px solid #4e8d7c;
+    border-radius: 50px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #2b2b28;
+    width: 130px;
+}
+.cv-buton:hover{
+    background-color: #4e8d7c;
+    border: 1px solid #fff;
+    color: #fff;
+  
+}
+
+.contact-buton{
+    background-color: #4e8d7c;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #fff;
+    width: 130px;
+
+}
+
+.contact-buton:hover{
+    background-color: #fff;
+    border: 1px solid #4e8d7c;
+    color: #2b2b28;
+  
+}
+
+.arrow{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.kapsul {
+  position: relative;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.kapsul:hover .overlay {
+  opacity: 1;
+}
+
+.progress-bar{
+    background-color: #2b2b28;
+}
+
+.progress{
+    margin-bottom: 1.5em;
+}
+
+
+/* The Overlay (background) */
+.overlayy {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #2b2b28; /* Black w/opacity */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlayy-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlayy a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #4e8d7c;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlayy a:hover, .overlayy a:focus {
+    color: #000000;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlayy .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 60px;
+  }
+
+  
+  .desktop-header{
+    display: none;
+  }
+  
+  .iconmen{
+    font-size:50px; 
+    cursor: pointer;
+    margin-top: 0.5em;
+    display: none!important;
+  }
+  
+  @media screen and (max-width: 800px) {
+        
+    .iconmen{
+      display: block!important;
+    }
+    
+    }
+
+ 
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 600px) {
+    .overlayy a {font-size: 20px}
+    .overlayy .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+    @media screen and (min-width: 800px) {
+        
+    .desktop-header{
+      display: block;
+    }
+    
+    }
+
+  @media screen and (max-width: 750px) {
+    body{
+      width: 100%;
+    }
+    
+    .cv{
+      position: absolute;
+      font-size:1.4em;
+      top: 15%; 
+      left: 7%;
+      color: #2b2b28;
+   }
+   #typed-strings{
+     margin-top: 2em;
+     margin-left: 2em;
+   }
+
+    .me{
+      border-radius:50%; 
+      height:300px;
+      margin-left: 3.2em;
+      margin-bottom: 1em;
+     }
+     
+     .arrowww{
+       display: flex;
+       justify-content: center;
+     }
+     
+     .card{
+       margin-bottom: 1em;
+     }
+  
+
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    width: 50px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4e8d7c; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #2b2b28; /* Add a dark-grey background on hover */
+  }
+
+  .card{
+    margin-bottom: 1em;
+  }
+
+  .food-link ul a li {
+    color: #fff;
+  }
+  
+  .food-link ul a  {
+    text-decoration: none;
+
+  }
+
+  .desktop-header ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #55726b;
+  }
+
+  .desktop-header li {
+    list-style-type: none;
+    padding: 15px;
+  }
+  .menuLink{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  
